@@ -31,7 +31,7 @@ body {
   background-attachment: fixed;
 
   .text {
-    padding: 10rem 10rem;
+    padding: 10rem 10vw;
     color: var(--purple);
     align-items: center;
     display: flex;
@@ -78,8 +78,8 @@ body {
 
       img {
         overflow: hidden;
-        width: 370px;
-        height: 330px;
+        width: 330px;
+        aspect-ratio: 3 / 2;
         border-radius: 10px;
       }
 
