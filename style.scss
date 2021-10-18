@@ -21,6 +21,15 @@ body {
   padding: 0;
 }
 
+p {
+  color: var(--white);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  padding: 10px;
+}
+
 .header {
   width: 100vw;
   height: 90vh;
@@ -29,28 +38,27 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
-  .text {
-    padding: 10rem 10vw;
-    color: var(--purple);
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 2.3rem;
-    h3 {
-      font-family: "Caveat", cursive;
-      font-weight: 400;
-      color: var(--purple);
-      font-size: 1.8rem;
-    }
-    h1 {
-      font-family: "Caveat", cursive;
-      font-size: 3rem;
-      color: var(--white);
-    }
-  }
+}
+.text {
+  padding: 10rem 10vw;
+  color: var(--purple);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2.3rem;
+}
+h3 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  color: var(--purple);
+  font-size: 1.8rem;
+}
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+  color: var(--white);
 }
 
 .cards {
@@ -58,53 +66,42 @@ body {
   background-size: cover;
   padding-bottom: 3rem;
   width: 100vw;
+}
+.card-container {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
 
-  .card-container {
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 400px;
-      height: 400px;
-
-      flex: 0 1 20%;
-
-      img {
-        overflow: hidden;
-        width: 330px;
-        aspect-ratio: 3 / 2;
-        border-radius: 10px;
-      }
-
-      h4 {
-        color: var(--white);
-        line-height: 3rem;
-        font-size: 1.3rem;
-      }
-
-      a {
-        text-decoration: none;
-        color: var(--white);
-
-        &:hover {
-          color: var(--purple);
-        }
-      }
-    }
-  }
+  flex: 0 1 20%;
+}
+img {
+  overflow: hidden;
+  width: 330px;
+  aspect-ratio: 3 / 2;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 700) {
-  .header {
-    .text {
-      padding: 5rem 5rem;
-    }
+h4 {
+  color: var(--white);
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+
+  &:hover {
+    color: var(--purple);
   }
 }
