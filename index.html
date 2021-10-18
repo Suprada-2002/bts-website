@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>BTS WEBSITE</title>
-  </head>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="/build/bundle.js"></script>
   <body>
     <p>@Suprada-2002</p>
     <section class="header">
       <div class="text">
-        <h3>A Journey of Seven Boys</h3>
-        <h1>From Nobody to The World's Biggest BoyBand</h1>
+        <h3 data-aos="fade-up-left">A Journey of Seven Boys</h3>
+        <h1 data-aos="fade-up-right">From Nobody to The World's Biggest BoyBand</h1>
       </div>
     </section>
 
     <section class="cards">
       <div class="card-container">
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/jin.jpg" alt="jin" />
           <h4>Kim Seokjin</h4>
           <a
@@ -28,7 +30,7 @@
           >
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/suga.jpg" alt="jin" />
           <h4>Min Yoongi</h4>
           <a
@@ -38,7 +40,7 @@
           >
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/rm.jpg" alt="jin" />
           <h4>Kim Namjoon</h4>
           <a
@@ -47,7 +49,7 @@
             >Know More</a
           >
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/v.jpg" alt="jin" />
           <h4>Kim Taehyung</h4>
           <a
@@ -56,7 +58,7 @@
             >Know More</a
           >
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/jhope.jpg" alt="jin" />
           <h4>Jung Hoseok</h4>
           <a
@@ -65,7 +67,7 @@
             >Know More</a
           >
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/jimin.jpg" alt="jin" />
           <h4>Park Jimin</h4>
           <a
@@ -74,7 +76,7 @@
             >Know More</a
           >
         </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in">
           <img src="stuff/jk.jpg" alt="jin" />
           <h4>Jeon Junkook</h4>
           <a
@@ -86,6 +88,11 @@
       </div>
     </section>
 
-    <script src="app.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
