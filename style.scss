@@ -19,9 +19,11 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+
+  user-select: none;
 }
 
-p {
+.copyright {
   color: var(--white);
   position: fixed;
   left: 0;
@@ -86,13 +88,19 @@ h1 {
 }
 img {
   overflow: hidden;
-  width: 330px;
+  width: 370px;
   aspect-ratio: 3 / 2;
   border-radius: 10px;
   transition: all ease;
 
   &:hover {
     box-shadow: 20px 20px rgba(19, 6, 19, 0.8);
+  }
+}
+
+@media screen and (max-width: 370px) {
+  img {
+    width: 90vw;
   }
 }
 
