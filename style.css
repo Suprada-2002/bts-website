@@ -16,9 +16,10 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  user-select: none; }
 
-p {
+.copyright {
   color: var(--white);
   position: fixed;
   left: 0;
@@ -74,15 +75,21 @@ h1 {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  height: 400px;
+  height: fit-content;
   flex: 0 1 20%; }
 
 img {
   overflow: hidden;
-  width: 330px;
+  width: 370px;
   aspect-ratio: 3 / 2;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: all ease; }
+  img:hover {
+    box-shadow: 20px 20px rgba(19, 6, 19, 0.8); }
 
+@media screen and (max-width: 370px) {
+  img {
+    width: 90vw; } }
 h4 {
   color: var(--white);
   line-height: 3rem;
